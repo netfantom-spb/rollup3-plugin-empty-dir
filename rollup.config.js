@@ -1,6 +1,6 @@
 /* eslint-env node */
 
-export default [
+export default
   {
     input: 'src/index.js',
     output: [
@@ -16,5 +16,5 @@ export default [
       },
     ],
     external: ['fs-extra'],
-  },
-]
+  }
+
