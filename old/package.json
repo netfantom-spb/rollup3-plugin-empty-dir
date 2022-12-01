@@ -1,0 +1,41 @@
+{
+  "name": "rollup3-plugin-empty-dir",
+  "version": "1.0.3",
+  "description": "Automatically empty output.dir before writing a new bundle (Rollup 3 support)",
+  "type": "module",
+  "repository": "netfantom-spb/rollup3-plugin-empty-dir",
+  "license": "MIT",
+  "author": "Viktor Egorov <netfantom.spb@gmail.com>>",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "main": "dist/empty-dir-cjs.js",
+  "module": "dist/empty-dir-esm.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w",
+    "test": "jest"
+  },
+  "jest": {
+    "clearMocks": true,
+    "transform": {
+      ".(js|jsx|ts|tsx)": "@sucrase/jest-plugin"
+    }
+  },
+  "dependencies": {
+    "fs-extra": "^7.0.1"
+  },
+  "devDependencies": {
+    "@sucrase/jest-plugin": "^3.0.0",
+    "@types/fs-extra": "^9.0.13",
+    "eslint": "^8.28.0",
+    "jest": "^29.3.1",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^3.5.0"
+  },
+  "peerDependencies": {
+    "rollup": "^3.0.0"
+  }
+}
