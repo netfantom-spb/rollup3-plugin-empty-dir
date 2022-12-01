@@ -1,7 +1,7 @@
 import { Plugin } from 'rollup'
 import { emptyDir } from 'fs-extra'
 
-export function cleanDir(): Plugin {
+export function cleanupDir(): Plugin {
     return {
         name: 'clean-dir',
         async generateBundle({ dir }) {

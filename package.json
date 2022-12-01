@@ -17,7 +17,9 @@
   "keywords": [
     "rollup",
     "plugin",
-    "empty dir"
+    "empty dir",
+    "clean dir",
+    "clear dir"
   ],
   "author": "Viktor Egorov",
   "license": "MIT",

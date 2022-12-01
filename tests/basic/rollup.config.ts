@@ -1,4 +1,4 @@
-import { cleanDir } from '../../src/index'
+import { cleanupDir } from '../../src/index'
 import { join } from 'path'
 import { RollupOptions } from 'rollup'
 
@@ -10,7 +10,7 @@ const options: RollupOptions = {
     dir: fixture('dest'),
     format: 'esm',
   },
-  plugins: [cleanDir()],
+  plugins: [cleanupDir()],
 }
 
 export default options;
