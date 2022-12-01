@@ -1,15 +1,16 @@
-/* eslint-env node */
-
-import emptyDir from '../../src/index'
+import { cleanDir } from '../../src/index'
 import { join } from 'path'
+import { RollupOptions } from 'rollup'
 
 const fixture = (name) => join('tests/basic', name)
 
-export default {
+const options: RollupOptions = {
   input: fixture('background.js'),
   output: {
     dir: fixture('dest'),
     format: 'esm',
   },
-  plugins: [emptyDir()],
+  plugins: [cleanDir()],
 }
+
+export default options;
