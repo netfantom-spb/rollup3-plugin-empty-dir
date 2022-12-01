@@ -1,12 +1,12 @@
 import { Plugin } from 'rollup'
-import { emptyDir as fsEmptyDir } from 'fs-extra'
+import { emptyDir } from 'fs-extra'
 
-export function EmptyDir(): Plugin {
+export function cleanDir(): Plugin {
     return {
-        name: 'empty-dir',
+        name: 'clean-dir',
         async generateBundle({ dir }) {
             if (dir) {
-                await fsEmptyDir(dir)
+                await emptyDir(dir)
             }
         },
     }
