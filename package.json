@@ -1,17 +1,17 @@
 {
   "name": "rollup3-plugin-empty-dir",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Automatically empty output.dir before writing a new bundle (Rollup 3 support)",
   "type": "module",
-  "repository": "ViktorEgorov/rollup3-plugin-empty-dir",
+  "repository": "netfantom-spb/rollup3-plugin-empty-dir",
   "license": "MIT",
   "author": "Viktor Egorov <netfantom.spb@gmail.com>>",
   "files": [
-    "lib",
+    "dist",
     "index.d.ts"
   ],
-  "main": "lib/empty-dir-cjs.js",
-  "module": "lib/empty-dir-esm.js",
+  "main": "dist/empty-dir-cjs.js",
+  "module": "dist/empty-dir-esm.js",
   "types": "index.d.ts",
   "scripts": {
     "build": "rollup -c",

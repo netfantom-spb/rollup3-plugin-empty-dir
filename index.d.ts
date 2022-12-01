@@ -1,6 +1,3 @@
-interface EmptyDirPlugin {
-  name: string
-  generateBundle(options: any): Promise<void>
-}
+import type { Plugin } from 'rollup';
 
-export function emptyDir(): EmptyDirPlugin
+export function emptyDir(): Plugin

@@ -5,14 +5,22 @@ export default
     input: 'src/index.js',
     output: [
       {
-        file: 'lib/empty-dir-esm.js',
+        file: 'dist/empty-dir-esm.js',
         format: 'esm',
         sourcemap: 'inline',
+        exports: 'named',
+        generatedCode: {
+          constBindings: true,
+        },
       },
       {
-        file: 'lib/empty-dir-cjs.js',
+        file: 'dist/empty-dir-cjs.js',
         format: 'cjs',
         sourcemap: 'inline',
+        exports: 'default',
+        generatedCode: {
+          constBindings: true,
+        },
       },
     ],
     external: ['fs-extra'],
